@@ -1,89 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --brand-color:#2D3E37;
+  --brand-brown:#BF8963;
+  --brand-brown2:#EAD2C3;
+  --brand-grey:#444444;
+  --berfilem: 'Berfilem';
+  --josefin: 'Josefin Sans','sans-serif';
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+*{
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  font-family: var(--josefin);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body{
+  overflow-x: hidden;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.brand-color{
+  color: var(--brand-color);
 }
-button:hover {
-  border-color: #646cff;
+.brand-brown{
+  color: var(--brand-brown);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.brand-brown2{
+  color: var(--brand-brown2);
 }
-
-.card {
-  padding: 2em;
+.brand-grey{
+  color: var(--brand-grey);
 }
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.bg-brand-color{
+  background-color: var(--brand-color);
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.bg-brand-brown{
+  background-color: var(--brand-brown);
+}
+.bg-brand-brown2{
+  background-color: var(--brand-brown2);
+}
+.bg-brand-grey{
+  background-color: var(--brand-grey);
+}
+nav{
+  background-color: #2d3e3779
+}
+.scrolled-down{
+  box-shadow:0 0 20px var(--brand-grey);
+}
+nav a{
+  text-decoration: none;
+  color: var(--brand-brown2);
+}
+nav a:hover{
+  color: white;
+}
+.scrolled-down a{
+  color: #2d3e378a;
+}
+.scrolled-down a:hover{
+  color: var(--brand-color);
+}
+.social-media-links a{
+  background-color: transparent;
+  color: var(--brand-brown);
+}
+.social-media-links a:hover{
+  background-color: var(--brand-brown);
+  color: var(--brand-color);
+}
+.fs-small{
+  font-size: 14px;
+}
+.fs-small span{
+  color: var(--brand-brown);
+}
+.shadow-text {
+  text-shadow: 2px 2px 0px var(--brand-brown2);
+}
+.shadow-text-light {
+  text-shadow: .7px .7px 0px var(--brand-brown2);
 }
